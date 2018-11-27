@@ -1,0 +1,78 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo   = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'altercation/vim-colors-solarized'
+
+[[plugins]]
+repo = 'othree/yajs.vim'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'othree/javascript-libraries-syntax.vim'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'othree/es.next.syntax.vim'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'othree/html5.vim'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+repo = 'ternjs/tern_for_vim'
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'MaxMEllon/vim-jsx-pretty'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'moll/vim-node'
+on_ft = ['javascript']
+
+[[plugins]]
+repo = 'myhere/vim-nodejs-complete'
+on_ft = ['javascript']
+hook_add = '''
+  setl omnifunc=jscomplete#CompleteJS
+  if !exists('g:neocomplcache_omni_functions')
+    let g:neocomplcache_omni_functions = {}
+  endif
+  let g:neocomplcache_omni_functions.javascript = 'nodejscomplete#CompleteJS'
+  let g:node_usejscomplete = 1
+'''
+
+[[plugins]]
+repo = 'w0rp/ale.git'
+on_source = ['lightline.vim']
+hook_add = '''
+  let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '']
+'''

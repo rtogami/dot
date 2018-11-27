@@ -1,0 +1,24 @@
+[user]
+    name  = Ryota Togami
+    email = ry.togami@gmail.com
+
+[color]
+    diff   = auto
+    status = auto
+    branch = auto
+    ui     = auto
+
+[core]
+    editor = vim
+    pager  = less -R
+    excludesfile = /Users/ryota.togami/.gitignore
+
+[alias]
+    s  = status
+    b  = branch 
+    cm = commit
+    co = checkout
+    lg = log -p
+    ls = ls-files
+    graph = log --graph --date-order -C -M --pretty=format:'<%h> %ad %Cgreen%d%Creset %s (%Cred%an%Creset)' --date=local --all
+    graph = log --graph --date-order -C -M --pretty=format:'<%h> %ad %Cgreen%d%Creset %s (%Cred%an%Creset)' --date=local
